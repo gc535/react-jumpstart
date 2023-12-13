@@ -1,0 +1,55 @@
+/* CSS */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 100; /* Higher z-index than other content */
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 20px;
+  z-index: 101; /* Higher z-index than overlay */
+}
+
+.modal-content :focus {
+  outline: transparent;
+}
+
+.popup-box {
+  border-radius: 15px;
+  min-width: 250px;
+  max-width: 500px;
+  padding: 2rem 0.54rem;
+  background: red;
+  box-shadow: 0 6px 16px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 35px );
+  -webkit-backdrop-filter: blur( 35px );
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+
+}
+
+.popup-position{
+  display: block;
+  position: fixed;
+  flex-direction: column;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 102;
+}
+
+.popup-box .message {
+  font-size: medium;
+  font-weight: 600;
+  padding: 5px 15px;
+}
+

@@ -1,0 +1,14 @@
+.private-container {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  min-height: 100vh;
+  margin: 30px auto;
+  padding-top: 20px;  /* Gap to navbar*/
+  padding-bottom: 20px;  /* Gap to footer*/
+  background-color: transparent;
+}
+
+.private-container .content-padding {
+  padding-bottom: 80px; 
+}

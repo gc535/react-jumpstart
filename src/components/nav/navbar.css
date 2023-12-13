@@ -1,0 +1,48 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1600px;
+  height: 100px;
+  /* background-color: #B1B2FF; */
+  justify-content: center;
+  place-self: center;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Arrange list items in a row */
+.nav-list li {
+  display: flex;
+  margin-right: 10px; /* Adjust spacing between items */
+  font-size: small;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .nav-list li:last-child {
+  margin-left: auto;
+} */
+
+.nav-list li:first-child {
+  margin-right: auto; /* Pushes the first item to the left */
+}
+
+.nav-list li .icon{
+  vertical-align: middle;
+  width: 160px;
+}
+
+/* Style anchor links */
+.nav-list li a {
+  text-decoration: none;
+  color: #333; /* Set your desired text color */
+}
